@@ -1,0 +1,16 @@
+kafka:
+  hosts: kafka.sitewatcher:9092
+  topic: site_status
+  cafile: ./ca.pem
+  certfile: ./service.cert
+  keyfile: ./service.key
+
+db:
+  host: postgres.sitewatcher:5432
+  user: sitewatcher
+  password: sitewatcher
+  db_name: sitewatcher
+  ssl_require: true
+
+
+

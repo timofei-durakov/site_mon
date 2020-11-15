@@ -1,0 +1,14 @@
+sites:
+  - url: http://ya.ru
+    regexp: '.*bbb.*'
+  - url: http://google.com
+    regexp: ''
+interval: 5
+kafka:
+  hosts:
+    - kafka.sitewatcher:9092
+  topic: site_status
+  cafile: ./ca.pem
+  certfile: ./service.cert
+  keyfile: ./service.key
+
